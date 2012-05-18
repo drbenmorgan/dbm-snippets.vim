@@ -6,7 +6,7 @@ snippet preamble
 
 # copyright notice
 snippet copyright
-	#----------------------------------------------------------------------
+	#-----------------------------------------------------------------------
 	# Copyright ${1:`strftime("%Y")`} `g:snips_author`
 	# Copyright ${2:$1} University of Warwick
 	${3}
@@ -45,7 +45,7 @@ snippet apply_gplv3_file
 
 # BSD 3-clause ("Modified BSD") License
 snippet mbsdl
-	#----------------------------------------------------------------------
+	#-----------------------------------------------------------------------
 	# Copyright (c) ${1:`strftime("%Y")`}, ${2:`g:snips_author`}
 	# All rights reserved.
 	#
@@ -79,23 +79,23 @@ snippet mbsdl
 	# IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 	# POSSIBILITY OF SUCH DAMAGE.
 	#
-	#----------------------------------------------------------------------
+	#-----------------------------------------------------------------------
 
 snippet apply_mbsdl
-	#---------------------------------------------------------------------
+	#-----------------------------------------------------------------------
 	# Copyright (c) ${1:`strftime("%Y")`}, ${2:`g:snips_author`}
 	#
-	# Distributed under the OSI-approved BSD License (the "License");
+	# Distributed under the OSI-approved BSD 3-Clause License (the "License");
 	# see accompanying file Copyright.txt for details.
 	#
 	# This software is distributed WITHOUT ANY WARRANTY; without even the
 	# implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	# See the License for more information.
-	#----------------------------------------------------------------------
+	#-----------------------------------------------------------------------
 
 # Boost License
 snippet boostl
-	#----------------------------------------------------------------------
+	#-----------------------------------------------------------------------
 	# Boost Software License - Version 1.0 - August 17th, 2003
 	#
 	# Permission is hereby granted, free of charge, to any person or 
@@ -121,7 +121,7 @@ snippet boostl
 	# LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
 	# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 	# DEALINGS IN THE SOFTWARE.
-	#----------------------------------------------------------------------
+	#-----------------------------------------------------------------------
 
 snippet apply_boostl
 	#          Copyright ${1:`g:snips_author`} ${2:`strftime("%Y")`}
@@ -131,12 +131,12 @@ snippet apply_boostl
 
 # New comment block
 snippet cmcomment
-	#----------------------------------------------------------------------
+	#-----------------------------------------------------------------------
 	# ${1:comment}
 
 # Enforce out of source build
 snippet cmoutofsource
-	#----------------------------------------------------------------------
+	#-----------------------------------------------------------------------
 	# Enforce an out-of-source build.
 	# Should be the first action in the CMakeLists.txt
 	#
@@ -185,7 +185,7 @@ snippet cmduallib
 
 # Standard versioning setup
 snippet cmcustomversion
-	#----------------------------------------------------------------------
+	#-----------------------------------------------------------------------
 	# Hardcode the definition of this project's version
 	# Compatible with CPack versioning
 	#
@@ -200,7 +200,7 @@ snippet cmcustomversion
 
 # Project specific module path
 snippet cmcustommodule
-	#----------------------------------------------------------------------
+	#-----------------------------------------------------------------------
 	# Prepend this project's custom module path(s) to CMAKE_MODULE_PATH
 	#
 	set(CMAKE_MODULE_PATH
@@ -210,7 +210,7 @@ snippet cmcustommodule
 
 # Single point of output for targets
 snippet cmcustomoutput
-	#----------------------------------------------------------------------
+	#-----------------------------------------------------------------------
 	# Output binaries to a single directory tree, but split the tree into 
 	# three braches, one each for RUNTIME, LIBRARY and ARCHIVE
 	#
