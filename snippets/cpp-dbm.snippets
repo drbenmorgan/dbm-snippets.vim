@@ -137,6 +137,16 @@ snippet hguard
 	${2}
 	#endif // $1
 
+# Add standard header layout
+snippet hlayout
+	// Standard Library
+	${1}
+	// Third Party
+	// - A
+	${2}
+	// This Project
+	${3}
+
 # Add a namespace
 snippet ns++ 
 	namespace ${1:warwick} {
