@@ -155,10 +155,10 @@ snippet cmoutofsource
 # CMake "header guard" to prevent multiple reparsing of a module
 snippet hguard
 	# - Include guard
-	if(__`tolower(Filename())`isloaded)
+	if(__`tolower(Filename())`_isloaded)
 		return()
 	endif()
-	set(__isloaded YES)
+	set(__`tolower(Filename())`_isloaded YES)
 	${1}
 
 # Idiom for creating Dynamic and Archive libraries with the same name
