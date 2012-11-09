@@ -27,7 +27,7 @@ snippet apply_gplv3_prog
 	# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 snippet apply_gplv3_file
-	# This file is part of ${1:Foobar}.
+	# This file is part of ${1}.
 	#
 	# ${1} is free software: you can redistribute it and/or modify
 	# it under the terms of the GNU General Public License as published by
@@ -151,6 +151,15 @@ snippet cmoutofsource
 		message(FATAL_ERROR "in-source build detected")
 	endif()
 	${2}
+
+# CMake "header guard" to prevent multiple reparsing of a module
+snippet hguard
+	# - Include guard
+	if(__`tolower(Filename())`isloaded)
+		return()
+	endif()
+	set(__isloaded YES)
+	${1}
 
 # Idiom for creating Dynamic and Archive libraries with the same name
 snippet cmduallib
