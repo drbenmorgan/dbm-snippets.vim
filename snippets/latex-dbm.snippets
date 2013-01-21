@@ -1,0 +1,24 @@
+# xetex document outline
+snippet xtemplate
+	\documentclass{${1:article}}
+	\usepackage{fontspec}
+
+	\begin{document}
+
+	\end{document}
+
+# Preamble
+snippet preamble
+	% - ${1}
+
+# Copyright notice
+snippet copyright
+	% Copyright ${1:`strftime("%Y")`} `g:snips_author`
+  % Copyright ${2:$1} University of Warwick
+  ${3}
+		
+# My standard comment block
+snippet comblock
+	%-----------------------------------------------------------------------
+	% ${1}
+
