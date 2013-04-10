@@ -228,4 +228,15 @@ snippet cmcustomoutput
 	set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/outputs/archive)
 	${1}
 
+# Load module once
+snippet cmloadonce
+	#-----------------------------------------------------------------------
+	# Load this module once
+	# NB: MUST be first operation in module!
+	#
+	if(__$()_ISLOADED)
+		return()
+	endif()
+	set(__$()_ISLOADED TRUE)
+	${1}
 
